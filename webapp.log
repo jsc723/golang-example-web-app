@@ -1,0 +1,414 @@
+2023/09/24 15:49:04 main.go:12: test
+2023/09/24 17:29:45 users.go:32: near ")": syntax error
+2023/09/24 17:30:16 users.go:32: table users has no column named email
+2023/09/24 17:30:51 users.go:32: not enough args to execute query: want 5 got 4
+2023/09/25 12:10:01 todos.go:52: sql: Scan error on column index 3, name "create_at": unsupported Scan, storing driver.Value type string into type *time.Time
+2023/09/25 12:25:36 todos.go:57: parsing time "2023-09-25 12:02:09.7564394-07:00" as "YYYY-MM-DD hh:mm:ss.SSSSSSSZ": cannot parse "2023-09-25 12:02:09.7564394-07:00" as "YYYY-MM-DD hh:mm:ss.SSSSSSSZ"
+2023/09/25 12:26:39 todos.go:57: parsing time "2023-09-25 12:02:09.7564394-07:00" as "2006-01-02 15:04:05.9999999-08:00": cannot parse "7:00" as "-08:00"
+2023/09/25 13:39:40 todos.go:92: no such table: todoes
+2023/09/25 17:13:09 server.go:3217: http: panic serving [::1]:9666: template: public_navbar.html:6: unexpected EOF
+goroutine 7 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1854 +0xbf
+panic({0x101fb00, 0xc000090140})
+	C:/Program Files/Go/src/runtime/panic.go:890 +0x263
+html/template.Must(...)
+	C:/Program Files/Go/src/html/template/template.go:368
+learn_go/todo_app/app/controllers.generateHTML({0x111d870?, 0xc0000ba000}, {0x100e7c0, 0x1119d00}, {0xc00006fa18?, 0x3, 0x0?})
+	C:/Users/jsc/go/src/learn_go/todo_app/app/controllers/server.go:15 +0x286
+learn_go/todo_app/app/controllers.top({0x111d870?, 0xc0000ba000?}, 0x0?)
+	C:/Users/jsc/go/src/learn_go/todo_app/app/controllers/route_main.go:8 +0x97
+net/http.HandlerFunc.ServeHTTP(0xc00007db80?, {0x111d870?, 0xc0000ba000?}, 0xb7ec2a?)
+	C:/Program Files/Go/src/net/http/server.go:2122 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x111d870, 0xc0000ba000}, 0xc00009a000)
+	C:/Program Files/Go/src/net/http/server.go:2500 +0x149
+net/http.serverHandler.ServeHTTP({0xc00008c030?}, {0x111d870, 0xc0000ba000}, 0xc00009a000)
+	C:/Program Files/Go/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc00014c090, {0x111db38, 0xc00007b8f0})
+	C:/Program Files/Go/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	C:/Program Files/Go/src/net/http/server.go:3089 +0x5ed
+2023/09/25 17:13:09 server.go:3217: http: panic serving [::1]:9667: template: public_navbar.html:6: unexpected EOF
+goroutine 8 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1854 +0xbf
+panic({0x101fb00, 0xc000090280})
+	C:/Program Files/Go/src/runtime/panic.go:890 +0x263
+html/template.Must(...)
+	C:/Program Files/Go/src/html/template/template.go:368
+learn_go/todo_app/app/controllers.generateHTML({0x111d870?, 0xc0000ba1c0}, {0x100e7c0, 0x1119d00}, {0xc000197a18?, 0x3, 0x0?})
+	C:/Users/jsc/go/src/learn_go/todo_app/app/controllers/server.go:15 +0x286
+learn_go/todo_app/app/controllers.top({0x111d870?, 0xc0000ba1c0?}, 0x0?)
+	C:/Users/jsc/go/src/learn_go/todo_app/app/controllers/route_main.go:8 +0x97
+net/http.HandlerFunc.ServeHTTP(0xc000152000?, {0x111d870?, 0xc0000ba1c0?}, 0xb7ec2a?)
+	C:/Program Files/Go/src/net/http/server.go:2122 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x111d870, 0xc0000ba1c0}, 0xc00018e000)
+	C:/Program Files/Go/src/net/http/server.go:2500 +0x149
+net/http.serverHandler.ServeHTTP({0xc000182030?}, {0x111d870, 0xc0000ba1c0}, 0xc00018e000)
+	C:/Program Files/Go/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc00014c120, {0x111db38, 0xc00007b8f0})
+	C:/Program Files/Go/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	C:/Program Files/Go/src/net/http/server.go:3089 +0x5ed
+2023/09/25 17:13:09 server.go:3217: http: panic serving [::1]:9668: template: public_navbar.html:6: unexpected EOF
+goroutine 20 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1854 +0xbf
+panic({0x101fb00, 0xc000286130})
+	C:/Program Files/Go/src/runtime/panic.go:890 +0x263
+html/template.Must(...)
+	C:/Program Files/Go/src/html/template/template.go:368
+learn_go/todo_app/app/controllers.generateHTML({0x111d870?, 0xc0002a2000}, {0x100e7c0, 0x1119d00}, {0xc000193a18?, 0x3, 0x0?})
+	C:/Users/jsc/go/src/learn_go/todo_app/app/controllers/server.go:15 +0x286
+learn_go/todo_app/app/controllers.top({0x111d870?, 0xc0002a2000?}, 0x0?)
+	C:/Users/jsc/go/src/learn_go/todo_app/app/controllers/route_main.go:8 +0x97
+net/http.HandlerFunc.ServeHTTP(0xc0000c4a00?, {0x111d870?, 0xc0002a2000?}, 0xb7ec2a?)
+	C:/Program Files/Go/src/net/http/server.go:2122 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x111d870, 0xc0002a2000}, 0xc000288000)
+	C:/Program Files/Go/src/net/http/server.go:2500 +0x149
+net/http.serverHandler.ServeHTTP({0xc000282030?}, {0x111d870, 0xc0002a2000}, 0xc000288000)
+	C:/Program Files/Go/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc00009c240, {0x111db38, 0xc00007b8f0})
+	C:/Program Files/Go/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	C:/Program Files/Go/src/net/http/server.go:3089 +0x5ed
+2023/09/25 17:13:10 server.go:3217: http: panic serving [::1]:9671: template: public_navbar.html:6: unexpected EOF
+goroutine 35 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1854 +0xbf
+panic({0x101fb00, 0xc000286280})
+	C:/Program Files/Go/src/runtime/panic.go:890 +0x263
+html/template.Must(...)
+	C:/Program Files/Go/src/html/template/template.go:368
+learn_go/todo_app/app/controllers.generateHTML({0x111d870?, 0xc0002a21c0}, {0x100e7c0, 0x1119d00}, {0xc0001a1a18?, 0x3, 0x0?})
+	C:/Users/jsc/go/src/learn_go/todo_app/app/controllers/server.go:15 +0x286
+learn_go/todo_app/app/controllers.top({0x111d870?, 0xc0002a21c0?}, 0x0?)
+	C:/Users/jsc/go/src/learn_go/todo_app/app/controllers/route_main.go:8 +0x97
+net/http.HandlerFunc.ServeHTTP(0xc0002b0500?, {0x111d870?, 0xc0002a21c0?}, 0xb7ec2a?)
+	C:/Program Files/Go/src/net/http/server.go:2122 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x111d870, 0xc0002a21c0}, 0xc00018e100)
+	C:/Program Files/Go/src/net/http/server.go:2500 +0x149
+net/http.serverHandler.ServeHTTP({0xc0001820c0?}, {0x111d870, 0xc0002a21c0}, 0xc00018e100)
+	C:/Program Files/Go/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc00028c120, {0x111db38, 0xc00007b8f0})
+	C:/Program Files/Go/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	C:/Program Files/Go/src/net/http/server.go:3089 +0x5ed
+2023/09/25 17:13:10 server.go:3217: http: panic serving [::1]:9672: template: public_navbar.html:6: unexpected EOF
+goroutine 50 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1854 +0xbf
+panic({0x101fb00, 0xc0002863c0})
+	C:/Program Files/Go/src/runtime/panic.go:890 +0x263
+html/template.Must(...)
+	C:/Program Files/Go/src/html/template/template.go:368
+learn_go/todo_app/app/controllers.generateHTML({0x111d870?, 0xc0002a2380}, {0x100e7c0, 0x1119d00}, {0xc000193a18?, 0x3, 0x0?})
+	C:/Users/jsc/go/src/learn_go/todo_app/app/controllers/server.go:15 +0x286
+learn_go/todo_app/app/controllers.top({0x111d870?, 0xc0002a2380?}, 0x0?)
+	C:/Users/jsc/go/src/learn_go/todo_app/app/controllers/route_main.go:8 +0x97
+net/http.HandlerFunc.ServeHTTP(0xc0001a2000?, {0x111d870?, 0xc0002a2380?}, 0xb7ec2a?)
+	C:/Program Files/Go/src/net/http/server.go:2122 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x111d870, 0xc0002a2380}, 0xc000288100)
+	C:/Program Files/Go/src/net/http/server.go:2500 +0x149
+net/http.serverHandler.ServeHTTP({0xc000282660?}, {0x111d870, 0xc0002a2380}, 0xc000288100)
+	C:/Program Files/Go/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc0001a8000, {0x111db38, 0xc00007b8f0})
+	C:/Program Files/Go/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	C:/Program Files/Go/src/net/http/server.go:3089 +0x5ed
+2023/09/25 17:13:10 server.go:3217: http: panic serving [::1]:9673: template: public_navbar.html:6: unexpected EOF
+goroutine 38 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1854 +0xbf
+panic({0x101fb00, 0xc000186150})
+	C:/Program Files/Go/src/runtime/panic.go:890 +0x263
+html/template.Must(...)
+	C:/Program Files/Go/src/html/template/template.go:368
+learn_go/todo_app/app/controllers.generateHTML({0x111d870?, 0xc0001c2000}, {0x100e7c0, 0x1119d00}, {0xc00019da18?, 0x3, 0x0?})
+	C:/Users/jsc/go/src/learn_go/todo_app/app/controllers/server.go:15 +0x286
+learn_go/todo_app/app/controllers.top({0x111d870?, 0xc0001c2000?}, 0x0?)
+	C:/Users/jsc/go/src/learn_go/todo_app/app/controllers/route_main.go:8 +0x97
+net/http.HandlerFunc.ServeHTTP(0xc0002b1180?, {0x111d870?, 0xc0001c2000?}, 0xb7ec2a?)
+	C:/Program Files/Go/src/net/http/server.go:2122 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x111d870, 0xc0001c2000}, 0xc00018e200)
+	C:/Program Files/Go/src/net/http/server.go:2500 +0x149
+net/http.serverHandler.ServeHTTP({0xc0001821b0?}, {0x111d870, 0xc0001c2000}, 0xc00018e200)
+	C:/Program Files/Go/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc00028c3f0, {0x111db38, 0xc00007b8f0})
+	C:/Program Files/Go/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	C:/Program Files/Go/src/net/http/server.go:3089 +0x5ed
+2023/09/25 17:13:15 server.go:3217: http: panic serving [::1]:9679: template: public_navbar.html:6: unexpected EOF
+goroutine 52 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1854 +0xbf
+panic({0x101fb00, 0xc0000903e0})
+	C:/Program Files/Go/src/runtime/panic.go:890 +0x263
+html/template.Must(...)
+	C:/Program Files/Go/src/html/template/template.go:368
+learn_go/todo_app/app/controllers.generateHTML({0x111d870?, 0xc0000ba380}, {0x100e7c0, 0x1119d00}, {0xc000197a18?, 0x3, 0x0?})
+	C:/Users/jsc/go/src/learn_go/todo_app/app/controllers/server.go:15 +0x286
+learn_go/todo_app/app/controllers.top({0x111d870?, 0xc0000ba380?}, 0x0?)
+	C:/Users/jsc/go/src/learn_go/todo_app/app/controllers/route_main.go:8 +0x97
+net/http.HandlerFunc.ServeHTTP(0xc0001a2780?, {0x111d870?, 0xc0000ba380?}, 0xb7ec2a?)
+	C:/Program Files/Go/src/net/http/server.go:2122 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x111d870, 0xc0000ba380}, 0xc00009a100)
+	C:/Program Files/Go/src/net/http/server.go:2500 +0x149
+net/http.serverHandler.ServeHTTP({0xc00008ccc0?}, {0x111d870, 0xc0000ba380}, 0xc00009a100)
+	C:/Program Files/Go/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc0001a81b0, {0x111db38, 0xc00007b8f0})
+	C:/Program Files/Go/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	C:/Program Files/Go/src/net/http/server.go:3089 +0x5ed
+2023/09/25 17:13:15 server.go:3217: http: panic serving [::1]:9680: template: public_navbar.html:6: unexpected EOF
+goroutine 21 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1854 +0xbf
+panic({0x101fb00, 0xc000090520})
+	C:/Program Files/Go/src/runtime/panic.go:890 +0x263
+html/template.Must(...)
+	C:/Program Files/Go/src/html/template/template.go:368
+learn_go/todo_app/app/controllers.generateHTML({0x111d870?, 0xc0000ba540}, {0x100e7c0, 0x1119d00}, {0xc00006fa18?, 0x3, 0x0?})
+	C:/Users/jsc/go/src/learn_go/todo_app/app/controllers/server.go:15 +0x286
+learn_go/todo_app/app/controllers.top({0x111d870?, 0xc0000ba540?}, 0x0?)
+	C:/Users/jsc/go/src/learn_go/todo_app/app/controllers/route_main.go:8 +0x97
+net/http.HandlerFunc.ServeHTTP(0xc0000c4c80?, {0x111d870?, 0xc0000ba540?}, 0xb7ec2a?)
+	C:/Program Files/Go/src/net/http/server.go:2122 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x111d870, 0xc0000ba540}, 0xc00009a200)
+	C:/Program Files/Go/src/net/http/server.go:2500 +0x149
+net/http.serverHandler.ServeHTTP({0xc00008cd80?}, {0x111d870, 0xc0000ba540}, 0xc00009a200)
+	C:/Program Files/Go/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc00009c2d0, {0x111db38, 0xc00007b8f0})
+	C:/Program Files/Go/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	C:/Program Files/Go/src/net/http/server.go:3089 +0x5ed
+2023/09/25 17:13:15 server.go:3217: http: panic serving [::1]:9681: template: public_navbar.html:6: unexpected EOF
+goroutine 39 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1854 +0xbf
+panic({0x101fb00, 0xc000090670})
+	C:/Program Files/Go/src/runtime/panic.go:890 +0x263
+html/template.Must(...)
+	C:/Program Files/Go/src/html/template/template.go:368
+learn_go/todo_app/app/controllers.generateHTML({0x111d870?, 0xc0000ba700}, {0x100e7c0, 0x1119d00}, {0xc000197a18?, 0x3, 0x0?})
+	C:/Users/jsc/go/src/learn_go/todo_app/app/controllers/server.go:15 +0x286
+learn_go/todo_app/app/controllers.top({0x111d870?, 0xc0000ba700?}, 0x0?)
+	C:/Users/jsc/go/src/learn_go/todo_app/app/controllers/route_main.go:8 +0x97
+net/http.HandlerFunc.ServeHTTP(0xc0002b1400?, {0x111d870?, 0xc0000ba700?}, 0xb7ec2a?)
+	C:/Program Files/Go/src/net/http/server.go:2122 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x111d870, 0xc0000ba700}, 0xc00009a300)
+	C:/Program Files/Go/src/net/http/server.go:2500 +0x149
+net/http.serverHandler.ServeHTTP({0xc00008d8f0?}, {0x111d870, 0xc0000ba700}, 0xc00009a300)
+	C:/Program Files/Go/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc00028c480, {0x111db38, 0xc00007b8f0})
+	C:/Program Files/Go/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	C:/Program Files/Go/src/net/http/server.go:3089 +0x5ed
+2023/09/25 17:13:45 server.go:3217: http: panic serving [::1]:9712: template: public_navbar.html:1: unexpected "}}" in define clause
+goroutine 25 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1854 +0xbf
+panic({0x101fb00, 0xc0000907d0})
+	C:/Program Files/Go/src/runtime/panic.go:890 +0x263
+html/template.Must(...)
+	C:/Program Files/Go/src/html/template/template.go:368
+learn_go/todo_app/app/controllers.generateHTML({0x111d870?, 0xc0000ba8c0}, {0x100e7c0, 0x1119d00}, {0xc00006fa18?, 0x3, 0x0?})
+	C:/Users/jsc/go/src/learn_go/todo_app/app/controllers/server.go:15 +0x286
+learn_go/todo_app/app/controllers.top({0x111d870?, 0xc0000ba8c0?}, 0x0?)
+	C:/Users/jsc/go/src/learn_go/todo_app/app/controllers/route_main.go:8 +0x97
+net/http.HandlerFunc.ServeHTTP(0xc000262000?, {0x111d870?, 0xc0000ba8c0?}, 0xb7ec2a?)
+	C:/Program Files/Go/src/net/http/server.go:2122 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x111d870, 0xc0000ba8c0}, 0xc000288200)
+	C:/Program Files/Go/src/net/http/server.go:2500 +0x149
+net/http.serverHandler.ServeHTTP({0xc0002832f0?}, {0x111d870, 0xc0000ba8c0}, 0xc000288200)
+	C:/Program Files/Go/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc00009c6c0, {0x111db38, 0xc00007b8f0})
+	C:/Program Files/Go/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	C:/Program Files/Go/src/net/http/server.go:3089 +0x5ed
+2023/09/25 17:13:45 server.go:3217: http: panic serving [::1]:9713: template: public_navbar.html:1: unexpected "}}" in define clause
+goroutine 40 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1854 +0xbf
+panic({0x101fb00, 0xc000090920})
+	C:/Program Files/Go/src/runtime/panic.go:890 +0x263
+html/template.Must(...)
+	C:/Program Files/Go/src/html/template/template.go:368
+learn_go/todo_app/app/controllers.generateHTML({0x111d870?, 0xc0000baa80}, {0x100e7c0, 0x1119d00}, {0xc000197a18?, 0x3, 0x0?})
+	C:/Users/jsc/go/src/learn_go/todo_app/app/controllers/server.go:15 +0x286
+learn_go/todo_app/app/controllers.top({0x111d870?, 0xc0000baa80?}, 0x0?)
+	C:/Users/jsc/go/src/learn_go/todo_app/app/controllers/route_main.go:8 +0x97
+net/http.HandlerFunc.ServeHTTP(0xc0002b1680?, {0x111d870?, 0xc0000baa80?}, 0xb7ec2a?)
+	C:/Program Files/Go/src/net/http/server.go:2122 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x111d870, 0xc0000baa80}, 0xc00009a400)
+	C:/Program Files/Go/src/net/http/server.go:2500 +0x149
+net/http.serverHandler.ServeHTTP({0xc00008df20?}, {0x111d870, 0xc0000baa80}, 0xc00009a400)
+	C:/Program Files/Go/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc00028c510, {0x111db38, 0xc00007b8f0})
+	C:/Program Files/Go/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	C:/Program Files/Go/src/net/http/server.go:3089 +0x5ed
+2023/09/25 17:13:45 server.go:3217: http: panic serving [::1]:9714: template: public_navbar.html:1: unexpected "}}" in define clause
+goroutine 28 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1854 +0xbf
+panic({0x101fb00, 0xc0001862b0})
+	C:/Program Files/Go/src/runtime/panic.go:890 +0x263
+html/template.Must(...)
+	C:/Program Files/Go/src/html/template/template.go:368
+learn_go/todo_app/app/controllers.generateHTML({0x111d870?, 0xc0001c21c0}, {0x100e7c0, 0x1119d00}, {0xc00019da18?, 0x3, 0x0?})
+	C:/Users/jsc/go/src/learn_go/todo_app/app/controllers/server.go:15 +0x286
+learn_go/todo_app/app/controllers.top({0x111d870?, 0xc0001c21c0?}, 0x0?)
+	C:/Users/jsc/go/src/learn_go/todo_app/app/controllers/route_main.go:8 +0x97
+net/http.HandlerFunc.ServeHTTP(0xc000262c80?, {0x111d870?, 0xc0001c21c0?}, 0xb7ec2a?)
+	C:/Program Files/Go/src/net/http/server.go:2122 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x111d870, 0xc0001c21c0}, 0xc00018e300)
+	C:/Program Files/Go/src/net/http/server.go:2500 +0x149
+net/http.serverHandler.ServeHTTP({0xc0001827e0?}, {0x111d870, 0xc0001c21c0}, 0xc00018e300)
+	C:/Program Files/Go/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc00009c990, {0x111db38, 0xc00007b8f0})
+	C:/Program Files/Go/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	C:/Program Files/Go/src/net/http/server.go:3089 +0x5ed
+2023/09/25 17:14:50 server.go:3217: http: panic serving [::1]:9800: template: signup.html:18: unexpected EOF
+goroutine 7 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1854 +0xbf
+panic({0x129fb00, 0xc000224160})
+	C:/Program Files/Go/src/runtime/panic.go:890 +0x263
+html/template.Must(...)
+	C:/Program Files/Go/src/html/template/template.go:368
+learn_go/todo_app/app/controllers.generateHTML({0x139d870?, 0xc000228000}, {0x0, 0x0}, {0xc00006fa18?, 0x3, 0x0?})
+	C:/Users/jsc/go/src/learn_go/todo_app/app/controllers/server.go:15 +0x286
+learn_go/todo_app/app/controllers.signup({0x139d870?, 0xc000228000?}, 0x0?)
+	C:/Users/jsc/go/src/learn_go/todo_app/app/controllers/route_auth.go:6 +0x8d
+net/http.HandlerFunc.ServeHTTP(0xc00007db80?, {0x139d870?, 0xc000228000?}, 0xdfec2a?)
+	C:/Program Files/Go/src/net/http/server.go:2122 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x139d870, 0xc000228000}, 0xc000114000)
+	C:/Program Files/Go/src/net/http/server.go:2500 +0x149
+net/http.serverHandler.ServeHTTP({0xc000106030?}, {0x139d870, 0xc000228000}, 0xc000114000)
+	C:/Program Files/Go/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc0000cc090, {0x139db38, 0xc00007b8f0})
+	C:/Program Files/Go/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	C:/Program Files/Go/src/net/http/server.go:3089 +0x5ed
+2023/09/25 17:14:50 server.go:3217: http: panic serving [::1]:9801: template: signup.html:18: unexpected EOF
+goroutine 8 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1854 +0xbf
+panic({0x129fb00, 0xc0002242e0})
+	C:/Program Files/Go/src/runtime/panic.go:890 +0x263
+html/template.Must(...)
+	C:/Program Files/Go/src/html/template/template.go:368
+learn_go/todo_app/app/controllers.generateHTML({0x139d870?, 0xc0002281c0}, {0x0, 0x0}, {0xc00019da18?, 0x3, 0x0?})
+	C:/Users/jsc/go/src/learn_go/todo_app/app/controllers/server.go:15 +0x286
+learn_go/todo_app/app/controllers.signup({0x139d870?, 0xc0002281c0?}, 0x0?)
+	C:/Users/jsc/go/src/learn_go/todo_app/app/controllers/route_auth.go:6 +0x8d
+net/http.HandlerFunc.ServeHTTP(0xc0000d2000?, {0x139d870?, 0xc0002281c0?}, 0xdfec2a?)
+	C:/Program Files/Go/src/net/http/server.go:2122 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x139d870, 0xc0002281c0}, 0xc000194000)
+	C:/Program Files/Go/src/net/http/server.go:2500 +0x149
+net/http.serverHandler.ServeHTTP({0xc000188030?}, {0x139d870, 0xc0002281c0}, 0xc000194000)
+	C:/Program Files/Go/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc0000cc120, {0x139db38, 0xc00007b8f0})
+	C:/Program Files/Go/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	C:/Program Files/Go/src/net/http/server.go:3089 +0x5ed
+2023/09/25 17:14:50 server.go:3217: http: panic serving [::1]:9802: template: signup.html:18: unexpected EOF
+goroutine 20 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1854 +0xbf
+panic({0x129fb00, 0xc00010a190})
+	C:/Program Files/Go/src/runtime/panic.go:890 +0x263
+html/template.Must(...)
+	C:/Program Files/Go/src/html/template/template.go:368
+learn_go/todo_app/app/controllers.generateHTML({0x139d870?, 0xc000128000}, {0x0, 0x0}, {0xc000199a18?, 0x3, 0x0?})
+	C:/Users/jsc/go/src/learn_go/todo_app/app/controllers/server.go:15 +0x286
+learn_go/todo_app/app/controllers.signup({0x139d870?, 0xc000128000?}, 0x0?)
+	C:/Users/jsc/go/src/learn_go/todo_app/app/controllers/route_auth.go:6 +0x8d
+net/http.HandlerFunc.ServeHTTP(0xc000242f00?, {0x139d870?, 0xc000128000?}, 0xdfec2a?)
+	C:/Program Files/Go/src/net/http/server.go:2122 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x139d870, 0xc000128000}, 0xc000114100)
+	C:/Program Files/Go/src/net/http/server.go:2500 +0x149
+net/http.serverHandler.ServeHTTP({0xc0001060c0?}, {0x139d870, 0xc000128000}, 0xc000114100)
+	C:/Program Files/Go/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc000202240, {0x139db38, 0xc00007b8f0})
+	C:/Program Files/Go/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	C:/Program Files/Go/src/net/http/server.go:3089 +0x5ed
+2023/09/25 17:14:51 server.go:3217: http: panic serving [::1]:9804: template: signup.html:18: unexpected EOF
+goroutine 35 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1854 +0xbf
+panic({0x129fb00, 0xc00010a320})
+	C:/Program Files/Go/src/runtime/panic.go:890 +0x263
+html/template.Must(...)
+	C:/Program Files/Go/src/html/template/template.go:368
+learn_go/todo_app/app/controllers.generateHTML({0x139d870?, 0xc0001281c0}, {0x0, 0x0}, {0xc00019da18?, 0x3, 0x0?})
+	C:/Users/jsc/go/src/learn_go/todo_app/app/controllers/server.go:15 +0x286
+learn_go/todo_app/app/controllers.signup({0x139d870?, 0xc0001281c0?}, 0x0?)
+	C:/Users/jsc/go/src/learn_go/todo_app/app/controllers/route_auth.go:6 +0x8d
+net/http.HandlerFunc.ServeHTTP(0xc000134780?, {0x139d870?, 0xc0001281c0?}, 0xdfec2a?)
+	C:/Program Files/Go/src/net/http/server.go:2122 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x139d870, 0xc0001281c0}, 0xc000204200)
+	C:/Program Files/Go/src/net/http/server.go:2500 +0x149
+net/http.serverHandler.ServeHTTP({0xc000206ed0?}, {0x139d870, 0xc0001281c0}, 0xc000204200)
+	C:/Program Files/Go/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc000118120, {0x139db38, 0xc00007b8f0})
+	C:/Program Files/Go/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	C:/Program Files/Go/src/net/http/server.go:3089 +0x5ed
+2023/09/25 17:14:51 server.go:3217: http: panic serving [::1]:9805: template: signup.html:18: unexpected EOF
+goroutine 21 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1854 +0xbf
+panic({0x129fb00, 0xc00010a4a0})
+	C:/Program Files/Go/src/runtime/panic.go:890 +0x263
+html/template.Must(...)
+	C:/Program Files/Go/src/html/template/template.go:368
+learn_go/todo_app/app/controllers.generateHTML({0x139d870?, 0xc000128380}, {0x0, 0x0}, {0xc000199a18?, 0x3, 0x0?})
+	C:/Users/jsc/go/src/learn_go/todo_app/app/controllers/server.go:15 +0x286
+learn_go/todo_app/app/controllers.signup({0x139d870?, 0xc000128380?}, 0x0?)
+	C:/Users/jsc/go/src/learn_go/todo_app/app/controllers/route_auth.go:6 +0x8d
+net/http.HandlerFunc.ServeHTTP(0xc000243180?, {0x139d870?, 0xc000128380?}, 0xdfec2a?)
+	C:/Program Files/Go/src/net/http/server.go:2122 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x139d870, 0xc000128380}, 0xc000114300)
+	C:/Program Files/Go/src/net/http/server.go:2500 +0x149
+net/http.serverHandler.ServeHTTP({0xc000106840?}, {0x139d870, 0xc000128380}, 0xc000114300)
+	C:/Program Files/Go/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc0002022d0, {0x139db38, 0xc00007b8f0})
+	C:/Program Files/Go/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	C:/Program Files/Go/src/net/http/server.go:3089 +0x5ed
+2023/09/25 17:14:51 server.go:3217: http: panic serving [::1]:9806: template: signup.html:18: unexpected EOF
+goroutine 38 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1854 +0xbf
+panic({0x129fb00, 0xc000224480})
+	C:/Program Files/Go/src/runtime/panic.go:890 +0x263
+html/template.Must(...)
+	C:/Program Files/Go/src/html/template/template.go:368
+learn_go/todo_app/app/controllers.generateHTML({0x139d870?, 0xc000228380}, {0x0, 0x0}, {0xc00006fa18?, 0x3, 0x0?})
+	C:/Users/jsc/go/src/learn_go/todo_app/app/controllers/server.go:15 +0x286
+learn_go/todo_app/app/controllers.signup({0x139d870?, 0xc000228380?}, 0x0?)
+	C:/Users/jsc/go/src/learn_go/todo_app/app/controllers/route_auth.go:6 +0x8d
+net/http.HandlerFunc.ServeHTTP(0xc000135900?, {0x139d870?, 0xc000228380?}, 0xdfec2a?)
+	C:/Program Files/Go/src/net/http/server.go:2122 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x139d870, 0xc000228380}, 0xc000204300)
+	C:/Program Files/Go/src/net/http/server.go:2500 +0x149
+net/http.serverHandler.ServeHTTP({0xc000206f90?}, {0x139d870, 0xc000228380}, 0xc000204300)
+	C:/Program Files/Go/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc0001183f0, {0x139db38, 0xc00007b8f0})
+	C:/Program Files/Go/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	C:/Program Files/Go/src/net/http/server.go:3089 +0x5ed
+2023/09/25 18:02:13 users.go:107: no such table: session
+2023/09/25 18:02:13 users.go:120: no such table: session
+2023/09/25 18:02:13 main.go:18: no such table: session
+2023/09/25 18:03:13 users.go:107: UNIQUE constraint failed: sessions.uuid
+2023/09/25 18:06:51 users.go:107: UNIQUE constraint failed: sessions.uuid
+2023/09/25 18:10:34 users.go:107: UNIQUE constraint failed: sessions.uuid
+2023/09/25 18:17:05 users.go:107: UNIQUE constraint failed: sessions.uuid
+2023/09/26 11:04:07 route_main.go:24: sql: Scan error on column index 4, name "create_at": unsupported Scan, storing driver.Value type string into type *time.Time
+2023/09/26 11:10:36 route_main.go:24: sql: Scan error on column index 4, name "create_at": unsupported Scan, storing driver.Value type string into type *time.Time
+2023/09/26 11:13:01 route_main.go:24: sql: expected 5 destination arguments in Scan, not 6
